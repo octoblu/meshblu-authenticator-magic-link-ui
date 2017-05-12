@@ -53,6 +53,7 @@
     "gzip-size": "^3.0.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
+    "lodash": "^4.17.4",
     "postcss-loader": "^2.0.5",
     "prop-types": "^15.5.10",
     "react": "^15.2.1",
