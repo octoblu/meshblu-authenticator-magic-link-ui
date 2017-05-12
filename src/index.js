@@ -7,6 +7,8 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import routes from './config/routes'
 import store from './ducks/store'
 
+import './global-styles'
+
 const history = syncHistoryWithStore(browserHistory, store)
 
 render(

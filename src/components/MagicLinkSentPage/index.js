@@ -1,20 +1,21 @@
 import React from "react"
-
-import ErrorState from "zooid-error-state"
+import styled from "styled-components"
 
 import Page from "../Page"
-import styles from "./styles.css"
+import StyledHeading from "../StyledHeading"
 
-const propTypes = {}
+const Header = styled(StyledHeading)`
+  font-size: 2rem;
+  margin-bottom: 1rem;
+`
 
 const MagicLinkSentPage = () => {
   return (
-    <Page width="small" className={styles.root}>
-      <ErrorState title="Magic Link sent!" description="Please check your email" />
+    <Page>
+      <Header>Magic Link sent!</Header>
+      <StyledHeading>Please check your email</StyledHeading>
     </Page>
   )
 }
-
-MagicLinkSentPage.propTypes = propTypes
 
 export default MagicLinkSentPage
