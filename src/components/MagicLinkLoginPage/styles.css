@@ -1,0 +1,52 @@
+.root {
+  justify-content: space-between;
+  margin-top: 3em;
+  max-width: 25em;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.loginForm {
+  font-size: 18px;
+}
+
+.loginFormField {
+  margin-bottom: 1.75em;
+}
+
+.loginInput {
+  background: transparent;
+  padding: 0.75em 0.5em;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 0.7em;
+  padding: 0 1em;
+
+  background: #42B0E2;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.loginButton:hover {
+  background: #2486B3;
+}

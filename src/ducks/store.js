@@ -1,13 +1,13 @@
 import { routerReducer } from 'react-router-redux'
 import { applyMiddleware, combineReducers, createStore } from 'redux'
-import createLogger from 'redux-logger'
+import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
 
-import exampleDuck from '../ducks/example-duck'
+import magicLink from './magic-link'
 
 const reducers = combineReducers({
   routing: routerReducer,
-  exampleDuck: exampleDuck,
+  magicLink: magicLink,
 })
 
 const logger = createLogger()
