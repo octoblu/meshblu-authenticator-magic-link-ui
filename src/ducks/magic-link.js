@@ -22,6 +22,7 @@ export const generateLink = ({ email, loginUrl }) => {
           return dispatch(generateLinkFailure(error))
         }
         browserHistory.push("/sent")
+        dispatch(generateLinkSuccess())
       })
     return
   }
@@ -37,5 +38,15 @@ export default createReducer({
     ...state,
     busy: true,
     error: null,
+  }),
+  [generateLinkSuccess]: (state) => ({
+    ...state,
+    busy: false,
+    error: null,
+  }),
+  [generateLinkFailure]: (state, error) => ({
+    ...state,
+    busy: false,
+    error: error,
   }),
 }, initialState)
