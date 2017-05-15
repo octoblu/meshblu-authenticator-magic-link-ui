@@ -12,7 +12,8 @@ export const generateLink = ({ domain, email, loginUrl }) => {
   return dispatch => {
     dispatch(generateLinkRequest())
     superagent
-      .post(`https://magic-link.${domain}/links`)
+      .post(`https://magic-link-service.${domain}/links`)
+      // .post(`http://localhost:3333/links`)
       .send({ email, loginUrl })
       .set("Accept", "application/json")
       .set("Content-Type", "application/json")

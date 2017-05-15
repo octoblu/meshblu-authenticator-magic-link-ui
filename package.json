@@ -1,6 +1,6 @@
 {
   "name": "meshblu-authenticator-magic-link-ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "meshblu-authenticator-magic-link-ui",
   "main": "index.js",
   "scripts": {
